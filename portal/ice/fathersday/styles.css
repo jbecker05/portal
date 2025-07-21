@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue&display=swap');
+
+:root {
+  --bg: #fff0f5;
+  --primary: #ff69b4;
+  --accent: #00ffff;
+  --text: #2f4f4f;
+}
+
+body {
+  background: linear-gradient(45deg, var(--bg), #e6e6fa, #ffe4e1);
+  color: var(--text);
+  font-family: 'Comic Neue', cursive;
+  padding: 0;
+  margin: 0;
+  animation: hueRotate 20s infinite linear;
+}
+
+@keyframes hueRotate {
+  0% { filter: hue-rotate(0deg); }
+  100% { filter: hue-rotate(360deg); }
+}
+
+.hero {
+  background: url('images/fathersday.jpg') center/cover no-repeat;
+  color: white;
+  padding: 80px 20px;
+  text-align: center;
+  font-size: 3rem;
+  text-shadow: 3px 3px 0 #000;
+}
+
+.gift-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  list-style: none;
+  padding: 0;
+}
+
+.gift-list li {
+  background-color: var(--accent);
+  color: black;
+  padding: 12px 20px;
+  border-radius: 20px;
+  transform: rotate(-5deg);
+  font-weight: bold;
+  box-shadow: 0 0 10px lime;
+  transition: transform 0.3s ease;
+}
+
+.gift-list li:hover {
+  transform: rotate(5deg) scale(1.1);
+}
+
+.card {
+  margin: 30px auto;
+  padding: 25px;
+  border-radius: 25px;
+  max-width: 700px;
+  text-align: center;
+  font-size: 1.3rem;
+  border: 3px dashed hotpink;
+}
+
+.fun-bg {
+  background: repeating-linear-gradient(
+    45deg,
+    #ffd700,
+    #ffd700 10px,
+    #ff6347 10px,
+    #ff6347 20px
+  );
+}
+
+.wiggle {
+  animation: wiggle 1s infinite;
+}
+
+@keyframes wiggle {
+  0% { transform: rotate(-2deg); }
+  50% { transform: rotate(2deg); }
+  100% { transform: rotate(-2deg); }
+}
+
+.spinny {
+  animation: spin 4s infinite linear;
+}
+
+@keyframes spin {
+  0% { transform: rotateY(0); }
+  100% { transform: rotateY(360deg); }
+}
+
+footer {
+  background-color: #ff1493;
+  color: white;
+  padding: 40px 20px;
+  text-align: center;
+  font-size: 1.5rem;
+  box-shadow: 0 0 20px cyan;
+}

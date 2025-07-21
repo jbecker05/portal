@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Apostle Spotlight</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Open+Sans&display=swap" rel="stylesheet">
+  <style>
+    /* Reset & Base */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    /* Body Background */
+    body {
+      margin: 0;
+      padding: 0;
+      background: #333;
+    }
+    /* Wrapper with background image, border, and rounded corners */
+    .wrapper {
+      max-width: 1200px;
+      margin: 20px auto;
+      border: 5px solid #000;
+      border-radius: 20px;
+      overflow: hidden;
+      background: url('images/background.jpg') no-repeat center/cover;
+      padding: 40px 20px;
+    }
+    /* Section Titles */
+    .section-title {
+      text-align: center;
+      color: #fff;
+      font-family: 'Playfair Display', serif;
+      font-size: 2rem;
+      margin: 0 0 20px;
+      text-shadow: 2px 2px 6px rgba(0,0,0,0.7);
+    }
+    /* Container for first presidency and apostles */
+    .leaders-container {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 30px;
+      margin-bottom: 40px;
+    }
+    /* Circular images with white border */
+    .leader {
+      width: 130px;
+      height: 130px;
+      border: 5px solid #fff;
+      border-radius: 50%;
+      overflow: hidden;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    }
+    .leader img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+    <!-- First Presidency -->
+    <h2 class="section-title">First Presidency</h2>
+    <div class="leaders-container">
+      <div class="leader"><img src="images/nelson.jpg" alt="President Russell M. Nelson"></div>
+      <div class="leader"><img src="images/oaks.jpg" alt="President Dallin H. Oaks"></div>
+      <div class="leader"><img src="images/eyring.jpg" alt="President Henry B. Eyring"></div>
+    </div>
+    <!-- Quorum of the Twelve Apostles -->
+    <h2 class="section-title">Quorum of the Twelve Apostles</h2>
+    <div class="leaders-container">
+      <div class="leader"><img src="images/ballard.jpg" alt="Apostle M. Russell Ballard"></div>
+      <div class="leader"><img src="images/holland.jpg" alt="Apostle Jeffrey R. Holland"></div>
+      <div class="leader"><img src="images/uchtdorf.jpg" alt="Apostle Dieter F. Uchtdorf"></div>
+      <div class="leader"><img src="images/bednar.jpg" alt="Apostle David A. Bednar"></div>
+      <div class="leader"><img src="images/cook.jpg" alt="Apostle Quentin L. Cook"></div>
+      <div class="leader"><img src="images/christofferson.jpg" alt="Apostle D. Todd Christofferson"></div>
+      <div class="leader"><img src="images/andersen.jpg" alt="Apostle Neil L. Andersen"></div>
+      <div class="leader"><img src="images/rasband.jpg" alt="Apostle Ronald A. Rasband"></div>
+      <div class="leader"><img src="images/stevenson.jpg" alt="Apostle Gary E. Stevenson"></div>
+      <div class="leader"><img src="images/renlund.jpg" alt="Apostle Dale G. Renlund"></div>
+      <div class="leader"><img src="images/gong.jpg" alt="Apostle Gerrit W. Gong"></div>
+      <div class="leader"><img src="images/soares.jpg" alt="Apostle Ulisses Soares"></div>
+    </div>
+  </div>
+</body>
+</html>
