@@ -4,44 +4,53 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>AI Scripture Study</title>
-  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
-  <header>
-    <h1>AI Scripture Study</h1>
-    <nav>
+  <div class="grid-container">
+    <header class="header">
+      <img src="images/logo.jpg" alt="My Logo" class="logo">
+      <h1>AI Scripture Study</h1>
+    </header>
+
+    <nav class="nav">
       <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="client.html" class="active">Client Project</a></li>
-        <li><a href="about.html">About</a></li>
+        <li><a href="aboutme.html">About</a></li>
       </ul>
     </nav>
-  </header>
 
-  <main>
-    <section class="project-section">
-      <h2>Project Overview</h2>
-      <p>This client project focused on developing an AI-powered scripture study tool. The goal was to provide users with personalized insights, summaries, and search features using modern AI techniques to enhance gospel study experiences.</p>
-    </section>
+    <main class="main">
+      <section class="project-redirect">
+        <h2>Visit the Live Project</h2>
+        <p>
+          <a href="https://jbecker05.github.io/wdd130-scott/" class="redirect-link" target="_blank">
+            Click here to view the full AI Scripture Study site
+          </a>
+        </p>
+      </section>
+      <section class="project-section">
+        <h2>Project Overview</h2>
+        <p>This client project focused on developing an AI-powered scripture study tool. The goal was to provide users with personalized insights, summaries, and search features using modern AI techniques to enhance gospel study experiences.</p>
+      </section>
 
-    <section class="project-details">
-      <h2>Key Features</h2>
-      <ul>
-        <li>Natural language scripture queries</li>
-        <li>Automated summarization of verses and chapters</li>
-        <li>Topic-based scripture grouping</li>
-        <li>AI-assisted daily study plans</li>
-      </ul>
-    </section>
+      <section class="project-details">
+        <h2>Key Features</h2>
+        <ul>
+          <li>Natural language scripture queries</li>
+          <li>Automated summarization of verses and chapters</li>
+          <li>Topic-based scripture grouping</li>
+          <li>AI-assisted daily study plans</li>
+        </ul>
+      </section>
 
-    <section class="project-screenshot">
-      <h2>Screenshot</h2>
-      <img src="images/scripture-study-screenshot.jpg" alt="AI Scripture Study Screenshot">
-    </section>
-  </main>
+    </main>
 
-  <footer>
-    <p>&copy; 2025 Jaxon Becker. All rights reserved.</p>
-  </footer>
+    <footer class="footer">
+      <p>&copy; 2025 Jaxon Becker. Designed for WDD130.</p>
+    </footer>
+  </div>
 </body>
 </html>
